@@ -1,0 +1,20 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; //negetive number: sure to that it will be behind
+    opacity: .25;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //similar to background-size = cover
+        //note: always set object-fit: cover when use HTML element like <video> tag
+        //note: always set background-size=cover when use background-image
+        //to cover parent element
+
+    }
+}
